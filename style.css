@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button-dark {
+  background-color: #1e2934;
+  padding: 32px 40px;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  border: 0;
+  overflow: hidden;
+  font-family: "Bruno Ace SC";
+  font-size: 20px;
+}
+
+.button-dark:hover {
+  color: #ffffff;
+}
+
+.button-dark:hover::before {
+  padding-right: 10px;
+  opacity: 1;
+  right: 0;
+  top: 17px;
+  left: inherit;
+  text-align: right;
+  position: absolute;
+  font-size: 24px;
+}
+
+.button-dark::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 350px;
+  height: 100px;
+  transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+  transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+  filter: blur(25px);
+  -webkit-transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-filter: blur(25px);
+}
+
+.button-dark:hover::before {
+  transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  -webkit-transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  -moz-transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  -ms-transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  -o-transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+}
+
+p {
+  position: absolute;
+  bottom: 0;
+  font-family: "Bruno Ace SC";
+  font-size: 16px;
+}
